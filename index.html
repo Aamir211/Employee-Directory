@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Employee Directory</h1>
+  
+  <div class="button-container">
+    <button id="reloadBtn">Reload Employees</button>
+    <button id="addEmployeeBtn">➕ Add Employee</button>
+  </div>
+
+  <div id="error"></div>
+  <div id="employee-container"></div>
+
+  <!-- Popup Form -->
+  <div id="employeeFormModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <h2>Add New Employee</h2>
+      <form id="employeeForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Phone:</label>
+        <input type="text" id="phone" required>
+
+        <label>Company:</label>
+        <input type="text" id="company" required>
+
+        <label>City:</label>
+        <input type="text" id="city" required>
+
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
